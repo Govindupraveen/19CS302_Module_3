@@ -1,74 +1,39 @@
 # EX 12 C program to check whether the given number is prime or not using function without return type and with arguments.
-## DATE: 11/05/2025
+## DATE:
 ## AIM:
 To write a C program to check whether the given number is prime or not using function without return type and with arguments.
 
 ## Algorithm
-1.Start the program and define a function with arguments and no return type.
-
-2.Read a number from the user in main().
-
-3.Pass the number as an argument to the function.
-
-4.In the function, check if the number is divisible by any number from 2 to n/2.
-
-5.Print whether the number is prime or not from the function.  
-
+1. Start 
+2. Declare the variable i. 
+3. Read the value given using scanf. 
+4. Check whether the given number is prime or not using if-else statement condition. 
+5. If true,print ("%d is a prime number.",i). 
+6. If false, print ("%d is not a prime number.",i). 
+7. End.
+   
 ## Program:
 ```
-/*
-C program to check whether the given number is prime or not using function without return type and with arguments.
-Developed by: Kamalesh S
-RegisterNumber:  212223060108
-*/
-
-#include <stdio.h>
-
-void checkPrime(int num)
-{
-    int i, isPrime = 1;
-
-    if(num <= 1)
-    {
-        printf("%d is not a prime number.\n", num);
-        return;
-    }
-
-    for(i = 2; i <= num / 2; i++)
-    {
-        if(num % i == 0)
-        {
-            isPrime = 0;
-            break;
-        }
-    }
-
-    if(isPrime)
-    {
-        printf("%d is a prime number.\n", num);
-    }
-    else
-    {
-        printf("%d is not a prime number.\n", num);
-    }
-}
-
-int main()
-{
-    int number;
-
-    printf("Enter a number: ");
-    scanf("%d", &number);
-
-    checkPrime(number);
-
-    return 0;
-}
-
+#include<stdio.h> 
+int main() 
+{ 
+int i; 
+scanf("%d",&i); 
+if(i%2==1 && i%1==0) 
+{ 
+printf("%d is a prime number.",i); 
+ 
+} 
+else 
+{ 
+printf("%d is not a prime number.",i); 
+} 
+return 0; 
+} 
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/957a57bf-913d-499f-bde4-c30b84bcb631)
+![image](https://github.com/user-attachments/assets/8a30ffee-099f-4226-a72f-3d4ebe61c38b)
 
 
 
