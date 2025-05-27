@@ -15,7 +15,7 @@ To write a C program to check whether the given number is prime or not using fun
 ## Program:
 ```
 #include<stdio.h> 
-int main() 
+void main() 
 { 
 int i; 
 scanf("%d",&i); 
@@ -28,7 +28,6 @@ else
 { 
 printf("%d is not a prime number.",i); 
 } 
-return 0; 
 } 
 ```
 
